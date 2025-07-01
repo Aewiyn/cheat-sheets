@@ -223,6 +223,45 @@
         <p>This is a group div with a class.</p>
     </div>
 
+<!--The nav element is used to represent a section of navigation links-->
+    <nav>
+        <ul>
+            <li><a href="#unique-heading">Unique Heading</a></li>
+            <li><a href="#unique-div">Unique Div</a></li>
+            <li><a href="#group-heading">Group Heading</a></li>
+            <li><a href="#group-div">Group Div</a></li>
+        </ul>
+    </nav>
+
+<!--The form ellement is used to gather user information. Placeholder allow an example to show and type force an type like an email-->
+    
+    <form action="url-goes-here"><!--The action attribute specifies where to send the form data when submitted-->
+        <label for="email">Email:</label><!--The required attribute specifies that the input field must be filled out before submitting the form-->
+        <input type="email" id="email" placeholder="Ex. example@email.com" name="email" required><!--The submit button submits the form data to the server. Could have been <button>-->
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The minlength and maxlength value allows only a certain number of characters to be entered-->
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" minlength="3" maxlength="15" required>
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The button element is used to performa a particular action-->
+    <button>Start Game</button>
+    <button type="button">Show Alert</button> <!--The type attribute specifies the type of button. The default is "submit"-->
+    <button type="reset">Reset Form</button> <!--The reset button resets the form to its initial state-->
+    <button type="submit">Submit Form</button> <!--The submit button submits the form data to the server-->
+
+<!--The form controls like inputs can be in different stages or condition like default, focused, readonly or disables-->
+    <form>
+        <input type="text" placeholder="Default state">
+        <input type="text" placeholder="Focused state" focused>
+        <input type="text" placeholder="Readonly state" readonly>
+        <input type="text" placeholder="Disabled state" disabled>
+    </form>
+
 <!--The footer element is used to represent the footer of a page-->
     <footer>
         <p>This is the footer of the page.</p>
