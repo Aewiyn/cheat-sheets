@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--meta name and content is used to provide a short description for the web page and impacting SEO-->
+    <meta name="description" content="This is a simple HTML document that demonstrates the basic structure and elements of an HTML page. It includes headings, paragraphs, images, links, lists, sections, divs, strong and em tags, figures, main, footer, header, unique IDs, and classes.">
+ 
+<!--The og:title is used to set the title that displays for social media posts-->
+    <meta property="og:title" content="HTML Cheat Sheet">
+
+<!--The og:type is used to represent the type of content beinf shared on social media.-->
+    <meta property="og:type" content="website">
+
+<!--The og:image is used to set the image that displays for social media posts-->
+    <meta property="og:image" content="https://i.pinimg.com/originals/dd/c6/cf/ddc6cfdbfbbc8b241c8ed7f5c590ea58.jpg">
+
+<!--The og:url is used to set the URL of the page being shared on social media-->
+    <meta property="og:url" content="https://example.com/cheat_sheet.html">
+
+</head>
+
+<body>
+<!--The header element is used to represent the header of a page-->
+    <header>
+        <h1>This is the header of the page</h1>
+        <p>This is a paragraph in the header.</p>
+    </header>
+
+<!--Different titles and paragraphe-->
+    <h1>most important heading element</h1>
+    <h2>second most important heading element</h2>
+    <h3>third most important heading element</h3>
+    <h4>fourth most important heading element</h4>
+    <h5>fifth most important heading element</h5>
+    <h6>least important heading element</h6>
+    <p>This is a paragraph element.</p>
+
+<!--This is how to add an image-->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5jss1A1oUkKuuSbJnic0a3OoQnn-JTHnz1w&s" alt="A slice of lasagna on a plate.">
+
+<!--This is how you reserved an HTML entity for exemple img so it's not recognize as html-->
+    <p>This is how you reserved an HTML entity for example &lt;img&gt; so it's not recognized as HTML.</p>
+
+<!--This is how to add a link to a website-->
+    <a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a>
+
+<!--This is how to add a link to an external resources like CSS for exemple. The rel attribute is used to specify the relationship-->
+    <link rel="stylesheet" href="Cheat_Sheet.css">
+
+<!--The script element is used to embed executable code. You could technically write all of your js code there (not recommended)-->
+    <script>    
+        alert("This is an alert message!"); // This will show an alert when the page loads
+    </script>
+
+<!--This is how to add a script to your HTML document. The src attribute is used to specify the path to the script file-->
+    <script src="Cheat_Sheet.js"></script>
+
+<!--This is how to add a unordered list-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+
+<!--This is how to add a ordered list-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+<!--This is how to add a definition list-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+<!--This is how to add a blockquote. It's used to represent a section that is quoted from another source-->
+    <blockquote>
+        <p>This is a blockquote. It is used to represent a section that is quoted from another source.</p>
+        <footer>— Author Name</footer>
+    </blockquote>
+
+<!--You can also use the cite element to attribute a source to your blockquote-->
+    <blockquote>
+        <p>This is a blockquote with a cite element. It is used to represent a section that is quoted from another source.</p>
+        <footer>— <cite>Author Name</cite></footer>
+    </blockquote>
+
+<!--The inline Quotation element is used to represent a short inline quotation-->
+    <p>This is a paragraph with an <q>inline quotation</q> element. It is used to represent a short inline quotation.</p>
+
+<!--The Superscript eleemnt is used to represent superscript text for example, exponents, superior lettering and ordinal numbers-->
+    <p>This is a paragraph with a superscript element. For example, E=mc<sup>2</sup> is a famous equation.</p>
+
+<!--The subscript element is used to represent subscript text for example, chemical formulas, mathematical notation and phonetic transcription-->
+    <p>This is a paragraph with a subscript element. For example, H<sub>2</sub>O is the chemical formula for water.</p>
+
+<!--The Abbreviation element is used to represent abbreviation or acronym-->
+    <p>This is a paragraph with an <abbr title="HyperText Markup Language">HTML</abbr> abbreviation element. It is used to represent an abbreviation or acronym.</p>
+
+<!--The inline Code element is used to represent a fragment of computer code. Often used with the Preformatted Text element-->
+    <pre><code>body { color: red; }</code></pre>
+
+<!--The time element is used to represent a specific time or date-->
+    <p>Last updated on <time datetime="2025-01-01">January 1, 2025</time>.</p>
+
+<!--The address element is used to represent contact information for the author of the document-->
+    <address>
+        Contact me at <a href="mailto:melissa.rohrer@hotmail.com">melissa.rohrer@hotmail.com</a>
+    </address>
+
+<!--This is a section. It's used to divide up content into smaller sections-->
+    <section>
+        <h2>This is a h2 in a section, it's used to divide up content into smaller sections.</h2>
+        <p>Hi, I am Mélissa, a wannabe web developer.</p>
+    </section>
+
+<!--This is a div. It's used to divide up content into smaller sections, but it's not semantic like a section. Good for CSS-->
+    <div>
+        <h2>This is a h2 in a div, it's used to divide up content into smaller sections, but it's not semantic like a section.</h2>
+        <p>Hi, I am Mélissa, a wannabe web developer.</p>
+    </div>
+
+<!--This is how to add bold text but doesn't mean that it's specially important-->
+    <b>This text is bold.</b>
+    <p>I can also have only one <b>word</b> in bold</p>
+<!--This is how to add bold text and show importance-->
+    <strong>This text is bold.</strong>
+    <p>I can also have only one <strong>word</strong> in bold</p>
+
+<!--This is how to add italic text-->
+    <em>This text is italic.</em>
+    <p>I can also have only one <em>word</em> in italic</p>
+<!--This is also italic but used to highlight alternative voice or mood for exemple from another language, thoughts or technical terms-->
+    <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
+
+<!--The Unarticulated Annotation element is used to represent span of inline text which should be rendered in a way that indicates that it has a non-textual annotation-->
+    <p>You can use the unarticulated annotation element to highlight
+        <u>inccccort</u> 
+        <u>spling</u> <u>issses</u>.
+    </p>
+
+<!--The Strikethrough element is used to represent content that is no longer accurate or relevant-->
+    <p>This text has a <s>strikethrough</s> element. It is used to represent content that is no longer accurate or relevant.</p>
+
+<!--The Ruby annotation is used for annoting text with pronunciation or explanation-->
+    <p>In Japanese, the word for "cat" is written as <ruby>猫<rt>ねこ</rt></ruby>.</p>
+
+<!--A figure element is used to group contente like image and diagrams-->
+<!--The figcaption element is used to represent a caption for that content INSIDE the figure element-->
+    <figure>
+        <img src="https://i.pinimg.com/originals/dd/c6/cf/ddc6cfdbfbbc8b241c8ed7f5c590ea58.jpg" alt="Max my baby." width="200" height="200">
+        <figcaption>This is a caption for the image.</figcaption>
+    </figure>
+
+<!--The iframe element is used to embed other HTML content directly within the HTML page-->
+    <iframe 
+    src="https://www.w3schools.com/html/mov_bbb.mp4"
+    title="YouTube video player"
+    width="560"
+    height="315"
+    allowfullscreen
+    ></iframe>
+
+<!--The audio and video elements are used to add sound content. Warning, it won't shop up with no attribute-->
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+<!--The controls attribute enables users to manage different actions like playaback-->
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls></audio>
+
+<!--The loop attribute makes the audio replay continuously-->
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls loop></audio>
+
+<!--The muted attribute start tje audio in a muted state-->
+    <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" controls loop muted></audio>
+
+<!--The source element will select the first source that the browser can support-->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg" />
+        <source src="audio.wav" type="audio/wav" />
+    </audio>
+
+<!--The poster attribute is used to display an image while the video is downloading-->
+    <video src="https://www.w3schools.com/html/mov_bbb.mp4" width="320" height="240" controls poster="https://www.w3schools.com/html/mov_bbb.jpg">
+    </video>
+
+<!--The target attribute tells the broswer where to open the URL-->
+    <a href="https://www.freecodecamp.org/" target="_blank">Open FreeCodeCamp in a new tab</a>
+    <a href="https://www.freecodecamp.org/" target="_self">Open FreeCodeCamp in the same tab</a>
+    <a href="https://www.freecodecamp.org/" target="_parent">Open FreeCodeCamp in the parent frame</a> 
+    <a href="https://www.freecodecamp.org/" target="_top">Open FreeCodeCamp in the full body of the window</a>
+
+<!--The input element can replace elements-->
+    <input type="text" placeholder="This is a text input">
+    <input type="image" alt="Descriptive text goes here" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt1sgGx_sh0mt2DZzsu11s_BbP5MK6vyQ1xw&s">
+
+<!--Know the difference between absolute and relative path-->
+    <p>Absolute path: <a href="https://www.example.com/path/to/resource">https://www.example.com/path/to/resource</a></p>
+    <p>Relative path: <a href="path/to/resource">path/to/resource</a></p>
+
+<!---The main element is used to represent the main content for a web page-->
+    <main>
+        <h1>This is the main content of the page</h1>
+        <p>This is a paragraph in the main content.</p>
+    </main>
+
+<!--ID are unique element identifiers. They should only be used once per HTML document-->
+    <h1 id="unique-heading">This is a unique heading</h1>
+    <div id="unique-div">
+        <p>This is a unique div with an ID.</p>
+    </div>
+
+<!--Classes are used to group elements together. They can be used multiple times in a document-->
+    <h1 class="group-heading">This is a group heading</h1>
+    <div class="group-div">
+        <p>This is a group div with a class.</p>
+    </div>
+
+<!--The footer element is used to represent the footer of a page-->
+    <footer>
+        <p>This is the footer of the page.</p>
+        <p>© 2025 MOAT (Mélissa of all time)</p>
+    </footer>
+</body>
+</html>
