@@ -248,6 +248,68 @@
         <input type="submit" value="Submit">
     </form>
 
+<!--The size attribute defines number of characters that should be visible as the user types into the input-->
+    <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" size="20" required>
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The input type="number" is used to create a number input field. The min and max attributes specify the range of valid values-->
+    <form>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120" required>
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The input type="password" is used to create a password field. The value is not displayed in plain text-->
+    <form>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <input type="submit" value="Submit">
+    </form>
+
+
+<!--The input type="radio" is used to create a radio button. The name attribute groups radio buttons together so that only one can be selected at a time-->
+    <form>
+        <label for="yes">Yes</label>
+        <input type="radio" id="yes" name="choice" value="yes" checked>
+        <label for="no">No</label>
+        <input type="radio" id="no" name="choice" value="no">
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The input type="checkbox" is used to create a checkbox. The checked attribute specifies that the checkbox should be checked by default-->
+    <form>    
+        <label for="subscribe">Subscribe to newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <input type="submit" value="Submit">
+    </form>
+
+<!--When you want users to make selections from a dropdown menu, you can use the select and option elements-->
+    <label for="city">Choose a City: </label>
+    <select id="city" name="city">
+        <option value="" disabled selected>Select a city</option> <!--The disabled attribute prevents the option from being selected-->
+        <option value="paris" selected>Paris</option>
+        <option value="new-york">New York</option>
+        <option value="los-angeles">Los Angeles</option>
+        <option value="chicago">Chicago</option>
+        <option value="miami">Miami</option>
+    </select>
+
+<!--The textarea element is a multi-line text input control that allows users to enter text that is longer than a single line.-->
+    <form>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        <input type="submit" value="Submit">
+    </form>
+
+<!--The rows and cols attribute are used to specify the visible height and width of the textarea.-->
+    <form>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        <input type="submit" value="Submit">
+    </form>
 <!--The button element is used to performa a particular action-->
     <button>Start Game</button>
     <button type="button">Show Alert</button> <!--The type attribute specifies the type of button. The default is "submit"-->
@@ -261,6 +323,20 @@
         <input type="text" placeholder="Readonly state" readonly>
         <input type="text" placeholder="Disabled state" disabled>
     </form>
+
+<!--The Method attribute is used to specify the HTTP method to use when sending the form data-->
+    <form method="GET" action="https://example.com/get-data">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search">
+        <input type="submit" value="Search">
+    </form>
+
+<!--The fieldset element is used to group related form controls together-->
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+    </fieldset>
 
 <!--The footer element is used to represent the footer of a page-->
     <footer>
