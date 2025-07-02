@@ -1,3 +1,4 @@
+
 /* This is how you can center text*/
 h1 {
     text-align: center;
@@ -13,12 +14,45 @@ h1 {
     color: #3a3a86;
 }
 
+hr {
+    border: 1px solid #3a3a86; /* This changes the color of the line */
+}
+
 /* You can also change the background color and add a background image */
 body {
     background-color: #b1b1cf;
     background-image: url('https://images2.alphacoders.com/588/588105.png');
     background-position: center; /* This centers the image */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This sets the font for the whole page */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This sets the font for the whole page. There's multiple as fallback incase one is not available */
+    font-style: normal; /* This sets the font style to normal */
+    font-size: 20px; /* This sets the font size for the whole page */
+}
+
+a {
+    color: #3a3a86; /* This changes the color of links */
+    font-family: Arial, Helvetica, sans-serif; /* This sets the font for links */
+    text-decoration: none; /* This removes the underline from links */
+}
+
+a:visited {
+    color: #2a2a66; /* This changes the color of visited links */
+}
+
+a:hover {
+    color: #1a1a46; /* This changes the color of links when hovered */
+}
+
+a:active {
+    color: #0a0a26; /* This changes the color of links when clicked */
+}
+
+img {
+    max-width: 100%; /* This makes sure the image doesn't overflow the container */
+    height: auto; /* This keeps the aspect ratio of the image */
+    display: block; /* This makes the image a block element */
+    margin: 0 auto; /* This centers the image */
+    margin-top: -10px; /* This adds space above the image */
+    margin-bottom: 20px; /* This adds space below the image */
 }
 
 /* This is how you can style something you put an id on. Here is the ion id=text-elements */
@@ -36,6 +70,7 @@ body {
     padding: 15px;
     border-radius: 5px;
     margin: 10px 0; /* This adds space above and below the box */
+    
 }
 
 /* This is how you can style a group of elements with a class. here I want only the "p" paragraph of the texts*/
