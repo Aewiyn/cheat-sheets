@@ -310,6 +310,7 @@
         <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
         <input type="submit" value="Submit">
     </form>
+    
 <!--The button element is used to performa a particular action-->
     <button>Start Game</button>
     <button type="button">Show Alert</button> <!--The type attribute specifies the type of button. The default is "submit"-->
@@ -337,6 +338,40 @@
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
     </fieldset>
+
+<!--The table element can have thead, tbody and tfoot element. tr means table row, th table header and td table data-->
+    <table>
+        <!--The caption element is used to provide a title for the table-->
+        <caption>Table Caption</caption>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>First row</th>
+                <td>First data cell</td>
+            </tr>
+            <tr>
+                <th>Second row</th>
+                <td>Second data cell</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Footer 1</th>
+                <td colspan="3">Footer 2</td> <!--The colspan attribute is used to specify the number of columns a cell should span-->
+            </tr>
+    </table>
+
+<!--This is an example of an HTML validator-->
+    <form action="https://validator.w3.org/nu/" method="post">
+        <label for="html-code">Enter your HTML code:</label>
+        <textarea id="html-code" name="html-code" rows="10" cols="50" placeholder="Paste your HTML code here..."></textarea>
+        <input type="submit" value="Validate HTML">
+    </form>
 
 <!--The footer element is used to represent the footer of a page-->
     <footer>
