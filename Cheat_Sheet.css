@@ -1,0 +1,45 @@
+/* This is how you can center text*/
+h1 {
+    text-align: center;
+}
+
+/* You can do this with multiple elements */
+h2, h3, p {
+    text-align: center;
+}
+
+/* This is how you can change the color of text */
+h1 {
+    color: #3a3a86;
+}
+
+/* You can also change the background color and add a background image */
+body {
+    background-color: #b1b1cf;
+    background-image: url('https://images2.alphacoders.com/588/588105.png');
+    background-position: center; /* This centers the image */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This sets the font for the whole page */
+}
+
+/* This is how you can style something you put an id on. Here is the ion id=text-elements */
+#text-elements {
+    background-color: #e5e3ff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 450px; /* You can also use % which can be easier to vizualize */
+    max-width: 500px; /* This limits the width to 500px */
+    margin: 0 auto; /* This centers the element */
+}
+/* This is how you can style something you put a class on */
+.group-heading {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0; /* This adds space above and below the box */
+}
+
+/* This is how you can style a group of elements with a class. here I want only the "p" paragraph of the texts*/
+.texts p {
+    display: inline-block; /* This allows the text to be centered */
+    margin: 0 10px; /* This adds space between the paragraphs */
+}
