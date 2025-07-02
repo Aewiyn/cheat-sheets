@@ -140,6 +140,9 @@
 <!--This is also italic but used to highlight alternative voice or mood for exemple from another language, thoughts or technical terms-->
     <p>There is a certain <i lang="fr">je ne sais quoi</i> in the air.</p>
 
+<!--The span element is used to style without giving any semantic meaning-->
+    <p>This is a <span style="color: red;">red</span> span element.</p>
+    
 <!--The Unarticulated Annotation element is used to represent span of inline text which should be rendered in a way that indicates that it has a non-textual annotation-->
     <p>You can use the unarticulated annotation element to highlight
         <u>inccccort</u> 
@@ -167,6 +170,7 @@
     height="315"
     allowfullscreen
     ></iframe>
+
 
 <!--The audio and video elements are used to add sound content. Warning, it won't shop up with no attribute-->
     <audio src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
@@ -326,7 +330,13 @@
 
 <!--The aria-hidden attribute indicates whether an element is visible or hidden to assistive technologies-->
     <div aria-hidden="true">This content is hidden from assistive technologies.</div>
-    
+
+<!--The aria-required attribute indicates that the input is required-->
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" aria-required="true" required>
+        <input type="submit" value="Submit">
+    </form>
 <!--The form controls like inputs can be in different stages or condition like default, focused, readonly or disables-->
     <form>
         <input type="text" placeholder="Default state">
