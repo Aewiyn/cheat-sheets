@@ -317,6 +317,16 @@
     <button type="reset">Reset Form</button> <!--The reset button resets the form to its initial state-->
     <button type="submit">Submit Form</button> <!--The submit button submits the form data to the server-->
 
+<!--ARIA properties provide additional details about elements.-->
+<!--The aria-label attribute provides a label for the button that is not visible on the page but can be read by screen readers-->
+    <button aria-label="Close" onclick="closeModal()">Close</button>
+
+<!--The aria-pressed attribute indicates the current state of a toggle button-->
+    <button aria-pressed="false" onclick="toggleButton()">Toggle</button> 
+
+<!--The aria-hidden attribute indicates whether an element is visible or hidden to assistive technologies-->
+    <div aria-hidden="true">This content is hidden from assistive technologies.</div>
+    
 <!--The form controls like inputs can be in different stages or condition like default, focused, readonly or disables-->
     <form>
         <input type="text" placeholder="Default state">
@@ -355,7 +365,7 @@
                 <td>First data cell</td>
             </tr>
             <tr>
-                <th>Second row</th>
+                <th scope="row">Second row</th> <!--The scope attribute is used to specify whether the header cell applies to a row, column, or group of rows or columns-->
                 <td>Second data cell</td>
             </tr>
         </tbody>
