@@ -4,9 +4,39 @@ h1 {
     text-align: center;
 }
 
+* {
+    margin: 0; /* This removes the default margin from all elements */
+    padding: 0; /* This removes the default padding from all elements */
+    box-sizing: border-box; /* This makes sure the width and height of elements include padding and border */
+}
+
 /* You can do this with multiple elements */
 h2, h3, p {
     text-align: center;
+}
+
+/* This is how you can style the ul in a navigation bar anywehere in your file*/
+nav ul {
+    list-style-type: none; /* This removes the bullet points from the list */
+    padding: 0; /* This removes the padding from the list */
+    text-align: center; /* This centers the list */
+}
+
+/* This is how you target a child element of a list item */
+nav > ul {
+    text-decoration: none; /* This removes the underline from the links */
+    color: #3a3a86; /* This changes the color of the links */
+    font-weight: bold; /* This makes the text bold */
+}
+
+/* This is how you can style the h2 element that comes after a div */
+div + h2 {
+    margin-top: 20px; /* This adds space above the h2 element */
+}
+
+/* This is how you can style all the h2 element that comes after a div */
+div ~ h2 {
+    margin-top: 10px; /* This adds space above the h2 element */
 }
 
 /* This is how you can change the color of text */
@@ -44,6 +74,12 @@ a:hover {
 
 a:active {
     color: #0a0a26; /* This changes the color of links when clicked */
+}
+
+ul {
+    list-style-type: square; /* This changes the bullet points to squares */
+    list-style-position: inside; /* This makes the bullet points inside the list */
+    list-style-image: url('https://example.com/square-bullet.png'); /* This changes the bullet points to a custom image */
 }
 
 img {
