@@ -53,15 +53,19 @@ body {
     background-color: #b1b1cf;
     background-image: url('https://images2.alphacoders.com/588/588105.png');
     background-position: center; /* This centers the image */
+    background-size: contain; /* This makes sure the image fits the container */
+    background-attachment: fixed; /* This makes sure the image doesn't move when scrolling */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* This sets the font for the whole page. There's multiple as fallback incase one is not available */
     font-style: normal; /* This sets the font style to normal */
     font-size: 20px; /* This sets the font size for the whole page */
 }
 
+
 a {
     color: #3a3a86; /* This changes the color of links */
     font-family: Arial, Helvetica, sans-serif; /* This sets the font for links */
     text-decoration: none; /* This removes the underline from links */
+    color:rgb(255, 231, 234)
 }
 
 a:visited {
@@ -74,6 +78,10 @@ a:hover {
 
 a:active {
     color: #0a0a26; /* This changes the color of links when clicked */
+}
+
+a:focus {
+    outline: 2px solid #3a3a86; /* This adds an outline to links when focused */
 }
 
 ul {
@@ -89,6 +97,11 @@ img {
     margin: 0 auto; /* This centers the image */
     margin-top: -10px; /* This adds space above the image */
     margin-bottom: 20px; /* This adds space below the image */
+    border-bottom: #2a2a66 2px solid; /* This adds a border around the image */
+    border-left: #b1b1cf 2px solid; /* This adds a border to the left side of the image */
+    border-radius: 10px; /* This rounds the corners of the image */
+    outline: auto;  /* This adds an outline to the image, doesn't change it's side not like border*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* This adds a shadow to the image */
 }
 
 /* This is how you can style something you put an id on. Here is the ion id=text-elements */
@@ -106,7 +119,7 @@ img {
     padding: 15px;
     border-radius: 5px;
     margin: 10px 0; /* This adds space above and below the box */
-    
+    background: linear-gradient(to right, #3a3a86, #b1b1cf), url('https://images2.alphacoders.com/588/588105.png'); /* This creates a linear gradient background with an image */
 }
 
 /* This is how you can style a group of elements with a class. here I want only the "p" paragraph of the texts*/
