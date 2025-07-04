@@ -4,6 +4,34 @@ h1 {
     text-align: center;
 }
 
+/* There's different units like px, em, rem, %, vh, vw, etc. */
+img {
+    width: 10px; /* This sets the width of the image to 10 pixels */
+    height: 1em; /* This sets the height of the image to 1em (relative to the font size) */
+    width: 1rem; /* This sets the width of the image to 1rem (relative to the root font size) */
+    height: 100%; /* This sets the height of the image to 100% of its container */
+    width: 100vw; /* This sets the width of the image to 100% of the viewport width */
+    height: 100vh; /* This sets the height of the image to 100% of the viewport height */
+}
+
+/* You can use a calc function to calculate the width and height of an element */
+img {
+    width: calc(100% - 20px); /* This sets the width of the image to 100% of its container minus 20 pixels */
+    height: calc(100vh - 50px); /* This sets the height of the image to 100% of the viewport height minus 50 pixels */
+    max-width: 100%; /* This makes sure the image doesn't overflow its container */
+    max-height: 100vh; /* This makes sure the image doesn't overflow the viewport height */
+    min-width: 50px; /* This sets the minimum width of the image to 50 pixels */
+    min-height: 50px; /* This sets the minimum height of the image to 50 pixels */
+}
+
+/* This is how you can style a navigation bar */
+nav {
+    background-color: #3a3a86; /* This sets the background color of the navigation bar */
+    padding: 10px; /* This adds space inside the navigation bar */
+    border-radius: 5px; /* This rounds the corners of the navigation bar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds a shadow to the navigation bar */
+}
+
 * {
     margin: 0; /* This removes the default margin from all elements */
     padding: 0; /* This removes the default padding from all elements */
