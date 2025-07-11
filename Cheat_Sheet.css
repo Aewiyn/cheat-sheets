@@ -2,6 +2,16 @@
 /* This is how you can center text*/
 h1 {
     text-align: center;
+    background-color: hsl(210, 100%, 50%); /* This sets the background color of the h1 element */
+    background: linear-gradient(90deg, rgb(58, 58, 134) 20%, rgb(177, 177, 207)); /* This creates a linear gradient background */
+    color: hsla(210, 100%, 50%, 0.8); /* This sets the text color of the h1 element */
+    color: #3a3a86; /* This sets the text color of the h1 element using hex */
+    opacity: 50%; /* This sets the opacity of the h1 element to 50% */
+}
+
+p:hover {
+    transform: scale(1.2); /* This scales the text to 120% of its original size */
+    text-align: center; /* This centers the text */
 }
 
 /* There's different units like px, em, rem, %, vh, vw, etc. */
@@ -12,6 +22,10 @@ img {
     height: 100%; /* This sets the height of the image to 100% of its container */
     width: 100vw; /* This sets the width of the image to 100% of the viewport width */
     height: 100vh; /* This sets the height of the image to 100% of the viewport height */
+    border-left-width: 10px; /* This sets the left border width of the image to 10 pixels */
+    border-left-style: solid; /* This sets the left border style of the image to solid */
+    border-left-color: #3a3a86; /* This sets the left border color of the image to #3a3a86 */
+    border-right: 1opx solid #3a3a86; /* This sets the right border of the image to 10 pixels solid with color #3a3a86 */
 }
 
 /* You can use a calc function to calculate the width and height of an element */
@@ -50,6 +64,15 @@ nav ul {
     text-align: center; /* This centers the list */
 }
 
+/* This is how you can style the input elements */
+input[type="text"]:focus {
+    width: 100%; /* This sets the width of the input to 100% of its container */
+    padding: 10px; /* This adds space inside the input */
+    border: 1px solid #ccc; /* This adds a border to the input */
+    border-radius: 5px; /* This rounds the corners of the input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds a shadow to the input */
+}
+
 /* This is how you target a child element of a list item */
 nav > ul {
     text-decoration: none; /* This removes the underline from the links */
@@ -70,6 +93,14 @@ div ~ h2 {
 /* This is how you can change the color of text */
 h1 {
     color: #3a3a86;
+}
+
+h1::before {
+  content: "🥳 "
+}
+
+h1::after {
+  content: " 🥳";
 }
 
 hr {
@@ -93,7 +124,10 @@ a {
     color: #3a3a86; /* This changes the color of links */
     font-family: Arial, Helvetica, sans-serif; /* This sets the font for links */
     text-decoration: none; /* This removes the underline from links */
-    color:rgb(255, 231, 234)
+    color:rgb(255, 231, 234);
+    background-color: #3a3a86; /* This sets the background color of links */
+    transform: scale(1); /* This sets the initial scale of the links */
+    transition: transform 0.3s, background-color 0.3s ease; /* This adds a transition effect when the link is hovered */
 }
 
 a:visited {
@@ -155,3 +189,55 @@ img {
     display: inline-block; /* This allows the text to be centered */
     margin: 0 10px; /* This adds space between the paragraphs */
 }
+
+/* Here is a list of tree-structural pseudo-classes you can use to style elements based on their position in the document tree */
+:root {} /* This targets the root element of the document */
+:empty {} /* This targets elements that have no children */
+:first-child {} /* This targets the first child of a parent */
+:last-child {} /* This targets the last child of a parent */
+:nth-child(n) {} /* This targets the nth child of a parent, where n can be a number, keyword, or formula */
+:nth-last-child(n) {} /* This targets the nth child from the end of a parent */
+:first-of-type {} /* This targets the first element of its type within a parent */
+:last-of-type {} /* This targets the last element of its type within a parent */
+:nth-of-type(n) {} /* This targets the nth element of its type within a parent */
+:nth-last-of-type(n) {} /* This targets the nth element of its type from the end of a parent */
+:only-child {} /* This targets elements that are the only child of their parent */
+:only-of-type {} /* This targets elements that are the only of their type within a parent
+
+/* Here are examples of functional pseudo-classes you can use to style elements based on their state */
+:is(selector) {} /* This matches elements that match any of the selectors in the list */
+:where(selector) {} /* This matches elements that match any of the selectors in the list, but has no specificity */
+:not(selector) {} /* This matches elements that do not match the selector */
+:has(selector) {} /* This matches elements that contain at least one element that matches the selector */
+
+/* Here are examples of pseudo-elements you can use to style specific parts of an element */
+::before {} /* This inserts content before the element */
+::after {} /* This inserts content after the element */
+::first-letter {} /* This styles the first letter of the element */
+::first-line {} /* This styles the first line of the element */
+::placeholder {} /* This styles the placeholder text of an input element */
+::selection {} /* This styles the text that is selected by the user */
+::backdrop {} /* This styles the backdrop of a modal or dialog */
+::marker {} /* This styles the marker of a list item */
+
+/* Here are examples of locational pseudo-classes you can use to style elements based on their position in the document */
+:link {} /* This targets links that have not been visited */
+:visited {} /* This targets links that have been visited */
+:any-link {} /* This targets any link, regardless of its state */
+:target {} /* This targets the element that is the target of a URL fragment */
+:target-within {} /* This targets the element that is the target of a URL fragment, and any of its descendants */
+:focus-within {} /* This targets an element that has focus or contains an element that has focus */
+:focus-visible {} /* This targets an element that has focus and is visible to the user */
+:focus-within {} /* This targets an element that has focus or contains an element that has focus */
+:enabled {} /* This targets form elements that are enabled */
+:disabled {} /* This targets form elements that are disabled */
+:checked {} /* This targets form elements that are checked, like checkboxes and radio buttons */
+:indeterminate {} /* This targets form elements that are in an indeterminate state, like checkboxes */
+:valid {} /* This targets form elements that are valid */
+:invalid {} /* This targets form elements that are invalid */
+:required {} /* This targets form elements that are required */
+:optional {} /* This targets form elements that are optional */
+:hover {} /* This targets elements when the user hovers over them */
+:active {} /* This targets elements when the user clicks on them */
+:focus {} /* This targets elements when the user focuses on them */
+:visited {} /* This targets links that have been visited */

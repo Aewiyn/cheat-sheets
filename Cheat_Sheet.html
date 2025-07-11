@@ -28,7 +28,6 @@
     <meta property="og:url" content="https://example.com/cheat_sheet.html">
 </head>
 
-
 <body>
 
     <!-- ====== Structural Elements ====== -->
@@ -258,11 +257,22 @@
             <input type="submit" value="Submit">
         </form>
 
+        <!--The fieldset element is used to group related elements in a form-->
+        <fieldset>
+            <legend>Account Information</legend>
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Submit">
+            </form>
+        </fieldset>
+
         <!--The input type="password" is used to create a password field.
              The value is not displayed in plain text-->
+        <!--the pattern attribute specifies a regular expression that the input value must match -->
         <form>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" pattern="[a-z0-5]{8,}" required>
             <input type="submit" value="Submit">
         </form>
 
@@ -273,6 +283,8 @@
             <input type="radio" id="yes" name="choice" value="yes" checked>
             <label for="no">No</label>
             <input type="radio" id="no" name="choice" value="no">
+            <input id="terms-and-conditions" type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            <input type="file" id="file-upload" name="file-upload" accept=".jpg, .jpeg, .png" required />
             <input type="submit" value="Submit">
         </form>
 
