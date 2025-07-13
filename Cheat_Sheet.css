@@ -14,6 +14,15 @@ p:hover {
     text-align: center; /* This centers the text */
 }
 
+/* This is how you can style a specific type of input inside a form */
+input[type="text"] {
+    width: 100%; /* This sets the width of the input to 100% of its container */
+    padding: 10px; /* This adds space inside the input */
+    border: 1px solid #ccc; /* This adds a border to the input */
+    border-radius: 5px; /* This rounds the corners of the input */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds a shadow to the input */
+}
+
 /* There's different units like px, em, rem, %, vh, vw, etc. */
 img {
     width: 10px; /* This sets the width of the image to 10 pixels */
@@ -49,6 +58,7 @@ nav {
 * {
     margin: 0; /* This removes the default margin from all elements */
     padding: 0; /* This removes the default padding from all elements */
+
     box-sizing: border-box; /* This makes sure the width and height of elements include padding and border */
 }
 
